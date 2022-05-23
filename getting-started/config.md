@@ -38,6 +38,7 @@ KeyPath = C:\Users\i\Documents\privkey.pem
 ; 启用 Unix Socket 监听
 [UnixSocket]
 Listen = /run/cloudreve/cloudreve.sock
+ProxyHeader = X-Forwarded-For
 
 ; 数据库相关，如果你只想使用内置的 SQLite数据库，这一部分直接删去即可
 [Database]
